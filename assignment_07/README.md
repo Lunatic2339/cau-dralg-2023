@@ -3,7 +3,7 @@
 
 - Python에서 기본적으로 제공하는 정렬 함수를 사용해 보는 과제입니다. 참고로 Python에서 제공하는 기본 정렬 알고리즘은 [Timsort](https://ko.wikipedia.org/wiki/%ED%8C%80%EC%86%8C%ED%8A%B8)입니다.
 - Python에서 제공하는 `list.sort()` 및 `sorted()` 함수를 활용하여 구현합니다.
-- Python 공식 문서를 참고하여 `list.sort()` 및 `sorted()`의 매개변수를 적절히 설정하여 구현합니다.
+- Python **공식 문서**를 참고하여 `list.sort()` 및 `sorted()`의 매개변수를 적절히 설정하여 구현합니다.
 - `sort_dict_by_key` 및 `sort_dict_by_val` 함수의 경우 `dict.items()` 함수를 활용할 수 있습니다.
 - 모든 코드는 `sort.py` 파일에 작성하며, 파일명을 변경하면 안 됩니다.
 - 제출 기한은 **2023년 5월 16일 오후 11시 59분** 입니다.
