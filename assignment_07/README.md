@@ -37,7 +37,7 @@ def sort_dict_by_val(kv, ascending=True) -> List[Tuple[object, object]]:
 ## 문제(2) `list`에 포함된 객체들을 정렬하는 `sort_objects(seq, key, inplace=True, ascending=True)` 함수를 구현하시오 [25점]
 - 전달인자 `seq`는 "sequence"를 의미하며, `list` 타입이다.
 - `seq`의 원소는 Python의 모든 객체가 될 수 있으며, `key`로 설정한 조건 또는 항목으로 대소 비교가 가능해야 한다.
-- `inplace`와 `ascending`의 동작방식은 **문제(1)**과 동일하다.
+- `inplace`와 `ascending`의 동작방식은 문제(1)과 동일하다.
 - `sort_objects` 구현 후 다음 예시 코드로 테스트하기 위해서는 "...생략..."으로 표기한 부분에 전달인자를 적절히 설정해야 한다.
 
 ```Python
