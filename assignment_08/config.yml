@@ -1,0 +1,19 @@
+---
+
+"COURSE": "CAU_DRALG_2023"
+"ASSIGNMENT": "ASSIGNMENT_08"
+
+"ID": "20001234"
+"FILES":
+    - "/**your-path-to-root**/cau-dralg-2023/assignment_08/binarysearchtree.py" 
+"PROBLEMS": 
+    - "PROBLEM_01"
+    - "PROBLEM_02"
+    - "PROBLEM_03"
+    - "PROBLEM_04"
+    - "PROBLEM_05"
+    - "PROBLEM_06"
+    - "PROBLEM_07"
+    - "PROBLEM_08"
+    - "PROBLEM_09"
+    - "PROBLEM_10"
