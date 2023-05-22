@@ -92,7 +92,7 @@ class BinarySearchTree:
 - `BinarySearchTree` 클래스의 `__init__`에서 `_root` 및 `_num_nodes` 멤버변수 생성한다.
 
 ## 문제(3)	`BinarySearchTree` 클래스의 `__len__` 멤버함수 구현 [5점]
-- 트리에 있는 총 노드 개수를 반환한다.
+- 트리에 존재하는 모든 노드의 개수를 반환한다.
 - `_num_nodes`를 이용하여 구현한다.
 
 ## 문제(4)	`BinarySearchTree` 클래스의 `empty` 멤버함수 구현 [5점]
@@ -111,20 +111,23 @@ class BinarySearchTree:
 
 
 ## 문제(6)	`BinarySearchTree` 클래스의 순회(traversal) 멤버함수 구현 [15점]
-- `preorder(get_node=False)` 멤버함수를 구현한다. [5점]
-- `inorder(get_node=False)` 멤버함수를 구현한다. [5점]
-- `postorder(get_node=False)` 멤버함수를 구현한다. [5점]
+### (a) 전위순회 `preorder(get_node=False)` 멤버함수 구현 [5점]
+### (b) 중위순회 `inorder(get_node=False)` 멤버함수 구현 [5점]
+### (c) 후위순회 `postorder(get_node=False)` 멤버함수 구현 [5점]
+
 - 순회 방식에 따라 노드를 방문하면서 리스트에 데이터 또는 노드 객체를 담아 반환한다.
 - `get_node` 매개변수의 기본값은 `False`이며, `get_node`가 `True`이면 반환할 리스트에 데이터 대신 노드 객체를 담는다.
-- 각 순회 함수는 재귀 함수로 구현할 수 있다. 하지만 재귀 함수를 사용하지 않고 `while` 루프와 큐 또는 스택 자료구조를 적절히 활용하여 구현할 것을 권장한다.
+- 각 순회 함수는 재귀 함수로 구현할 수 있다. 하지만 재귀 함수를 사용하지 않고 while 루프와 큐 또는 스택 자료구조를 적절히 활용하여 구현할 것을 권장한다.
+
 
 
 ## 문제(7)	`BinarySearchTree` 클래스의 최대/최소 멤버함수 구현 [10점]
-- 최소값을 찾는 `min(root, get_node)` 멤버함수를 구현한다. [5점]
-- 최대값을 찾는 `max(root, get_node)` 멤버함수를 구현한다. [5점]
-- 이진 탐색 트리에서 데이터의 값이 최소 또는 최대인 노드를 찾아 데이터 또는 노드를 반환한다.
+### (a) `min(root, get_node=False)` 멤버함수 구현 [5점]
+### (b) `max(root, get_node=False)` 멤버함수 구현 [5점]
+- 이진탐색트리에서 데이터의 값이 최소/최대인 노드를 찾아 데이터 또는 노드를 반환한다.
 - `get_node` 매개변수의 기본값은 `False`이며, `get_node`가 `True`이면 데이터 대신 노드를 반환한다.
-- `root` 매개변수에 특정 노드를 넣어주면 해당 노드를 루트로 하여 서브트리에서 최소값을 찾는다.
+- `root` 매개변수에 특정 노드를 넣어주면 해당 노드를 루트로 하여 서브트리에서 최소/최대값을 찾는다.
+
 
 ## 문제(8)	`BinarySearchTree` 클래스의 `search(data)` 멤버함수 구현 [10점]
 - 지정한 `data`를 갖는 `Node` 객체를 찾아 반환한다.
@@ -146,5 +149,5 @@ class BinarySearchTree:
 - `BinarySearchTree` 내에 있는 모든 `Node` 객체를 제거하는 함수이다.
 - 각 `Node` 객체를 참조하는 변수가 하나도 없도록 코드를 작성한다. 즉, 가비지 콜렉션(garbage collection)에 따라 `Node` 객체가 자동적으로 삭제될 수 있도록 한다.
 - `_num_nodes`를 이용하여 구현하며, 노드가 전혀 없는 경우 `True`를 반환하고 그렇지 않은 경우 False를 반환한다.
-- 후위 순회(postorder)하면서 각 노드에 `left, right, parent`에 `None`을 삽입한 후, 마지막으로 `_root`를 `None`으로 설정하고 `_num_nodes`에 0을 대입한다.
+- 후위순회(postorder traversal)하면서 각 노드에 `left, right, parent`에 `None`을 삽입한 후, 마지막으로 `_root`를 `None`으로 설정하고 `_num_nodes`에 0을 대입한다.
 
